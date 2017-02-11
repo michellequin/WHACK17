@@ -1,0 +1,29 @@
+.immi-header{
+	font: 70px "Times New Roman";
+	color: #B20D00;
+	text-align: center;
+	padding:35px;
+}
+
+.body {
+	font: 20px "Times New Roman";
+	color: black;
+	text-align: left;
+	padding: 35px;
+	background-color: #96FFE4;
+}
+
+.immi-image {
+	display: block;
+	margin: auto;
+	padding-bottom: 10px;
+	width: 100%;
+}
+
+.immi-link {
+	font: 20px "arial";
+	color: #222;
+	text-align: left;
+	padding: 35px;
+	background-color:#FFAD57;
+}
