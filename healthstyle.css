@@ -1,0 +1,29 @@
+.health-header{
+	font: 60px "Times New Roman";
+	color: #264CB2;
+	text-align: center;
+	padding:35px;
+}
+
+.body {
+	font: 20px "Times New Roman";
+	color: black;
+	text-align: left;
+	padding: 35px;
+	background-color: #FFB3A1;
+}
+
+.health-image {
+	display: block;
+	margin: auto;
+	padding-bottom: 10px;
+	width: 100%;
+}
+
+.health-link {
+	font: 20px "arial";
+	color: #222;
+	text-align: left;
+	padding: 35px;
+	background-color:#CCC461;
+}
