@@ -4,13 +4,8 @@
  
 }
 
-.main-header {
-  flex: 0 1 auto;
-}
-
-header{  
+header.secondary{  
 padding-left: 75px;
-font-family: Lucida;
 }
 
 button {
