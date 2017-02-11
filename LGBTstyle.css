@@ -1,0 +1,29 @@
+.lgbtqia-header{
+	font: 60px "Times New Roman";
+	color: #B2265D;
+	text-align: center;
+	padding:35px;
+}
+
+.body {
+	font: 20px "Times New Roman";
+	color: black;
+	text-align: left;
+	padding: 35px;
+	background-color: #FFF5A1;
+}
+
+.lgbtqia-image {
+	display: block;
+	margin: auto;
+	padding-bottom: 10px;
+	width: 100%;
+}
+
+.lgbtqia-link {
+	font: 20px "arial";
+	color: #222;
+	text-align: left;
+	padding: 35px;
+	background-color:#FF87C0;
+}

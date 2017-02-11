@@ -1,0 +1,32 @@
+.BLM-header{
+	font: 70px "Times New Roman";
+	color: #222;
+	text-align: center;
+	padding:35px;
+}
+
+.bod {
+	font: 20px "Times New Roman";
+	color: black;
+	text-align: left;
+	padding: 35px;
+	background-color: gold;
+}
+
+.blm-image {
+	display: block;
+	margin: auto;
+	padding-bottom: 10px;
+	width: 100%;
+}
+
+.bod-link {
+	font: 20px "arial";
+	color: #7F09B2;
+	text-align: left;
+	padding: 35px;
+	background-color:#FFBA4C;
+}
+
+
+
