@@ -1,0 +1,29 @@
+.fem-header{
+	font: 60px "Times New Roman";
+	color: #5B2EB2;
+	text-align: center;
+	padding:35px;
+}
+
+.body {
+	font: 20px "Times New Roman";
+	color: black;
+	text-align: left;
+	padding: 35px;
+	background-color: #8BCCA2;
+}
+
+.fem-image {
+	display: block;
+	margin: auto;
+	padding-bottom: 10px;
+	width: 100%;
+}
+
+.fem-link {
+	font: 20px "arial";
+	color: #222;
+	text-align: left;
+	padding: 35px;
+	background-color:#FFD7AC;
+}
