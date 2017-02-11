@@ -1,14 +1,11 @@
+html
+{
+	}
+.column
+	html{
 
+			}
+	body{
 
-.validation_icons {
-    display: inline-block;
-    list-style-type: none;
-}
-
-.icon {
-	float: left;
-	display: block;
-    margin: auto;
-    padding:10px;
-    width: 50%;
-}
+	font-size: 50%;	
+	}
