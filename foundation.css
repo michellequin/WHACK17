@@ -4339,3 +4339,9 @@ a.thumbnail {
 
 .long-delay {
   animation-delay: 700ms !important; }
+.iconPad{
+  padding:70px;
+}
+.btwPad{
+  padding:20px;
+}
