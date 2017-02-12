@@ -4,7 +4,7 @@ body {
 }
 
 
-h1 {  font-family: 'Love Ya Like A Sister', cursive;
+h1 {   font-family: 'Josefin Slab', serif;
 		font-style: italic;
         text-decoration: none
 		color: #B7C5FF;
@@ -49,6 +49,7 @@ p.dropdown {vertical-align: center;}
     font-size: 25px;
     border: none;
     cursor: pointer;
+    font-family: 'Josefin Slab', serif;
 }
 
 /* The container <div> - needed to position the dropdown content */
@@ -62,7 +63,8 @@ p.dropdown {vertical-align: center;}
     display: none;
     position: absolute;
     background-color: #f9f9f9;
-    min-width: 160px;
+    min-width: 150px;
+    width: 310px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
 }
@@ -75,6 +77,7 @@ p.dropdown {vertical-align: center;}
     display: block;
     font-size: 20px;
     min-width: 310px;
+    font-family: 'Josefin Slab', serif;
 }
 
 /* Change color of dropdown links on hover */
