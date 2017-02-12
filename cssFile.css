@@ -15,12 +15,15 @@ h4 {  font-family: Georgia, "Times New Roman",
         Times, serif;
         font-size:40px;
         text-align: center;
+        margin-bottom:30px;
     }
 
 h5 {  font-family: Georgia, "Times New Roman",
         Times, serif;
         font-size:20px;
-        text-align: center;}
+        text-align: center;
+        margin-top: -20px;
+        margin-bottom: 60px;}
 
 img.right {float: left; 
 	height: 650px; width: auto;
@@ -63,9 +66,11 @@ p.dropdown {vertical-align: center;}
 /* Links inside the dropdown */
 .dropdown-content a {
     color: black;
-    padding: 12px 16px;
+    padding: 15px 10px;
     text-decoration: none;
     display: block;
+    font-size: 20px;
+    min-width: 310px;
 }
 
 /* Change color of dropdown links on hover */
