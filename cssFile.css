@@ -3,27 +3,31 @@ body {
   background-color: #E6EBFF
 }
 
-h1 {  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+
+h1 {  font-family: 'Love Ya Like A Sister', cursive;
 		font-style: italic;
+        text-decoration: none
 		color: #B7C5FF;
         font-size:20px;
         text-align: center;	
         background-color: #FEFFA7; padding: 15px;line-height: 125%;
+
     }
 
-h4 {  font-family: Georgia, "Times New Roman",
-        Times, serif;
-        font-size:40px;
+h4 {    font-family: 'Love Ya Like A Sister', cursive;
+        font-size:50px;
         text-align: center;
-        margin-bottom:30px;
+        text-decoration: none
+        margin-bottom:10px;
     }
 
-h5 {  font-family: Georgia, "Times New Roman",
-        Times, serif;
-        font-size:20px;
+h5 {  font-family: 'Love Ya Like A Sister', cursive;
+        font-size:25px;
         text-align: center;
-        margin-top: -20px;
-        margin-bottom: 60px;}
+        margin-top: -70px;
+        margin-bottom: 60px;
+        text-decoration: none
+}
 
 img.right {float: left; 
 	height: 650px; width: auto;
