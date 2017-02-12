@@ -14,6 +14,15 @@
 </head>
 <body>
 
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.8&appId=108498818220";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
 <section id="container">
 	<section id="chatWindow">
 		<section id="chatMain">
@@ -39,12 +48,13 @@
 	
 		<section id="startButtonDiv"><div>
 			<div id="description">
-				Epsile is a simple open-source clone of <a href="http://omegle.com" target="_blank">Omegle</a>, where people get connected to other people, in a one-to-one chat.<br>
-				If everyone is paired up, you must wait until someone finish a conversation. Chats are anonymous,<br>
+				Click the button below to begin! This chat client is based on
+				Epsile, a simple open-source clone of <a href="http://omegle.com" target="_blank">Omegle</a>.<br>
+				If no match is available, you must wait until someone finishes a conversation. Chats are anonymous,<br>
 				meaning that the strangers you chat with don't know anything about you (unless you describe yourself).
 			</div>
 			<br>
-			<input type=button value="Start chatting!" onclick="Epsile.startChat();" class="button" id="startButton" disabled>
+			<input type=button value="Let's go!" onclick="Epsile.startChat();" class="button" id="startButton" disabled>
 		</div></section>
 		
 		<header>
@@ -54,20 +64,13 @@
 		<section id="badges">
 			<div>
 				<span id="sharebuttons">
-					<a href="https://twitter.com/share" class="twitter-share-button" data-text="Epsile: An Omegle clone created with HTML5" data-via="daniel_hede" data-related="omegle" data-hashtags="epsile">Tweet</a><br>
+					<a href="https://twitter.com/share" class="twitter-share-button" data-text="Fight the echo chamber with a new Omegle style chat!" data-via="daniel_hede" data-related="omegle" data-hashtags="epsile">Tweet</a><br>
 					<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-					<div class="g-plusone"></div>
-					<script type="text/javascript">
-					  (function() {
-						var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
-						po.src = 'https://apis.google.com/js/plusone.js';
-						var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
-					  })();
-					</script>
+				<div class="fb-share-button" data-href="https://developers.facebook.com/docs/plugins/" data-layout="button_count" data-size="small" data-mobile-iframe="true"><a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;src=sdkpreparse">Share</a></div>
 				</span>
-				<a href="http://nodejs.org" target="_blank"><img src="img/nodejs-love2.png" align=top vspace=6></a>
+				<a href="http://nodejs.org" target="_blank"><img src="img/nodejs-love2.png" width="100" height="40" align=top vspace=6></a>
 				&nbsp;
-				<a href="http://www.w3.org/html/logo/" target="_blank"><img src="img/html5-badge-h-connectivity-css3.png"></a>
+				<a href="http://www.w3.org/html/logo/" target="_blank"><img src="img/html5-badge-h-connectivity-css3.png" width="140" height="53"></a>
 			</div>
 		</section>
 	
