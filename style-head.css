@@ -1,0 +1,109 @@
+#content {
+ 
+    padding:3px;
+ 
+}
+
+.main-header {
+  flex: 0 1 auto;
+}
+
+header{  
+padding-left: 75px;
+font-family: Lucida;
+}
+
+button {
+ 
+/*center the button*/
+display: block;
+margin-left: auto;
+margin-right: auto;
+margin-bottom: 10px;
+margin-top: 10px;
+ 
+/* add your code to set top and bottom margins */
+ 
+/*add an image to your button*/
+-webkit-border-image: url("orangeButton.png") 0 14 0 14 stretch;
+ 
+/*set width and height for the button*/
+width:100px;
+height: 30px;
+ 
+}
+
+button.back{
+/*These lines override the previous styling of buttons*/
+-webkit-border-image: url("greyButton.png") 0 14 0 14 stretch;
+width:60px;
+height: 30px;
+
+/*These lines position the back button inside the header*/
+position:absolute;
+left:16px;
+top:8px;
+
+}
+
+video {
+ 	/* add your style definitions here */
+ 
+ 	/* transitions applied to the video element */
+ 	-moz-transition: all 1s ease-in-out;
+ 	-webkit-transition: all 1s ease-in-out;
+ 	-o-transition: all 1s ease-in-out;
+ 	-ms-transition: all 1s ease-in-out;
+ 	transition: all 1s ease-in-out;
+}
+
+
+#Wellesley{
+    /*center the image*/
+    display: block;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;}
+
+#main_nav ul { padding: 0; font-weight: bold; }
+
+#main_nav li a {
+	display: block;
+margin: 6px;
+padding: 9px;
+border-radius: 10px; /*rounded corners*/
+list-style-type: none;
+text-decoration: none;
+color: #222;
+
+
+/* nice gradient shade on the button*/
+background-image: -webkit-linear-gradient(top, #f8f8f8 0, #d4d4d4 100%);
+background-image: linear-gradient(to bottom, #f8f8f8 0, #d4d4d4 100%);
+
+border: 1px solid #666; /*dark outline*/
+} /*closes #main_nav li a */
+
+nav li:active {
+  background-color: #ccc;
+  background-image: none;
+  box-shadow: inset 0 3px 3px rgba(0, 0, 0, .2);
+}
+
+
+header {
+	background-color: #0000FF;
+	font-family: Helvetica
+	font-size: 35px;
+	padding:10px;
+
+
+}
+
+body {
+	background-color: #dde6ef; /*light blue*/
+	width: 100%;
+	color: #222; /*dark gray*/
+	font-family: Helvetica;
+	font-size: 14px;
+}
