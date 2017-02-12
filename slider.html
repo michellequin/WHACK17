@@ -10,7 +10,7 @@
 	</form>
 </script>
 	</head>
-	<body>
+	<body> <script="slider.js"> </script>
 		<h1 class="header" style="font-family:verdana"><b>The horizontal line below is kind of ugly? maybe a nice header here</b></h1>
 		<hr/>
 		<p class="topic-content"> 
@@ -19,32 +19,32 @@
         </div>
         <p class="dropdown1"></p>
         <div class="dropdown">
-            <button class="dropbtn">choosing stance goes to next page also fix visiblity of options</button>
+            <button class="dropbtn">Where do you stand?</button>
             <div class="dropdown-content">
-                <a href="chat.html">Strongly For</a>
-                <a href="chat.html">For</a>
-                <a href="chat.html">Neutral</a>
-                <a href="chat.html">Against</a>
-                <a href="chat.html">Strongly Disagree</a>
+                <a href="chat.html" onclick="saveandTrue()">Strongly For</a>
+                <a href="chat.html" onclick="saveandTrue()">For</a>
+                <a href="chat.html" onclick="saveTopic()">Neutral</a>
+                <a href="chat.html" onclick="saveandFalse()">Against</a>
+                <a href="chat.html" onclick="saveandFalse()">Strongly Disagree</a>
             </div>
         </div>
 
 		<!--//li class="question widget"-->
 			<div class="question-input"><label class="choice selected">
 
-				<input type="radio" name="c7" value="1">
+				<input id="fem" type="radio" name="c7" value="1">
     				Feminism
 					</label><label class="choice">
-				<input type="radio" name="c7" value="2">
+				<input id="blm" type="radio" name="c7" value="2">
    					 Black Lives Matter
 					</label><label class="choice">
-				<input type="radio" name="c7" value="3">
+				<input id="imm" type="radio" name="c7" value="3">
    					 Immigration
 					</label><label class="choice">
-				<input type="radio" name="c7" value="4">
+				<input id="wom" type="radio" name="c7" value="4">
 			     Women's Rights
 					</label><label class="choice">
-				<input type="radio" name="c7" value="5">
+				<input id="lgbt" type="radio" name="c7" value="5">
 			     LGBTQIA
 			</label>
 			</div>
