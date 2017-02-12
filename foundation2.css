@@ -3,18 +3,26 @@
 .validation_icons {
     display: inline-block;
     list-style-type: none;
+
 }
 
 .icon {
 	float: left;
 	display: block;
-    margin: auto;
-    padding:10px;
+    margin: center;
+    padding:60px;
     width: 50%;
+    height: 50%;
 }
 
 .iconPad {
 	display: block;
     margin: auto;
     padding:10px;
+    text-align: center;
+}
+
+.dumb_icons {
+    align-items: center;
+    width: 100%;
 }
