@@ -12,3 +12,9 @@
     padding:10px;
     width: 50%;
 }
+
+.iconPad {
+	display: block;
+    margin: auto;
+    padding:10px;
+}
