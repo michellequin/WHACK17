@@ -1,4 +1,17 @@
+@font-face {    
+  font-family: 'chalk';
+  src: local("chalk.ttf");
+  font-weight: normal;
+    }
 
+h1 {
+    font-family: 'Love Ya Like A Sister', cursive;
+    font-size: 60px;
+}
+
+h4 {
+    font-family: 'Josefin Slab', serif;
+}
 
 .validation_icons {
     display: block;
@@ -12,6 +25,16 @@
     padding:60px;
     width: 50%;
     height: 50%;
+}
+
+h5 {
+    font-family: 'Love Ya Like A Sister', cursive;
+    font-size: 150%;
+}
+
+h6 {
+    font-family: 'Josefin Slab', serif;
+    font-size: 25px;
 }
     
 
