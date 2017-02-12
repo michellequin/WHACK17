@@ -1,17 +1,17 @@
-sessionStorage["isDebate"] = false;
+localStorage["isDebate"] = false;
 
 
 function save(key) {
-	sessionStorage["topic"] = key;
-	sessionStorage["isLeft"] = undefined;
+	localStorage["topic"] = key;
+	localStorage["isLeft"] = undefined;
 }
 
 function savef(key) {
 	save(key);
-	sessionStorage["isLearn"] = false;
+	localStorage["isLearn"] = false;
 }
 
 function savet(key) {
 	save(key);
-	sessionStorage["isLearn"] = true;
+	localStorage["isLearn"] = true;
 }

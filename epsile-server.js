@@ -21,6 +21,7 @@ app.use(express.static(__dirname + '/'));
 
 io.set('log level', 1);
 
+
 // global variables, keeps the state of the app
 var sockets = {},
 	users = {},
@@ -44,59 +45,12 @@ io.sockets.on('connection', function (socket) {
 	// store the socket and info about the user
 	sockets[socket.id] = socket;
 	users[socket.id] = {
-        id: socket.id,
 		connectedTo: -1,
-		isTyping: false,
-		isDebate: sessionStorage["isDebate"],
-		topic : sessionStorage["topic"]
+		isTyping: false
 	};
-
-	if(users[socket.id].isDebate) {
-		users[socket.id].isLeft = sessionStorage["isLeft"];
-	} else {
-		users[socket.id].isLearn = sessionStorage["isLearn"];
-	}
-
 
 	// connect the user to another if strangerQueue isn't empty
 	if (strangerQueue !== false) {
-	    var connected = false;
-	    if(isDebate) {
-	        for(i = 0; i < strangerQueue.length; i++) {
-	            var currentStranger = strangerQueue.shift();
-	            if((users[socket.id].isLearn === true && currentStranger.isLearn === false && currentStranger.topic === users[socket.id].topic)
-                    || users[socket.id].isLearn === false && currentStranger.isLearn == true && currentStranger.topic === users[socket.id].topic) {
-	                connectTo(socket.id, currentStranger);
-	                connected = true;
-	                if(strangerQueue.length === 0) {
-	                    strangerQueue = false;
-	                }
-	                break;
-	            } else {
-	                strangerQueue.push(currentStranger);
-	            }
-	        }
-	    } else {
-	        for(i = 0; i < strangerQueue.length; i++) {
-	            var currentStranger = strangerQueue.shift();
-	            if(currentStranger.topic === users[socket.id].topic && currentStranger.isLeft !== users[socket.id].isLeft) {
-	                connectTo(socket.id, currentStranger);
-	                connected = true;
-	                if(strangerQueue.length === 0) {
-	                    strangerQueue = false;
-	                }
-	                break;
-	            } else {
-	                strangerQueue.push(currentStranger);
-	            }
-	        }
-	    }
-
-	    if(connected === false) {
-	        strangerQueue.push(users[socket.id]);
-	    }
-
-        /* original code form simple anonymous 
 		users[socket.id].connectedTo = strangerQueue;
 		users[socket.id].isTyping = false;
 		users[strangerQueue].connectedTo = socket.id;
@@ -104,12 +58,10 @@ io.sockets.on('connection', function (socket) {
 		socket.emit('conn');
 		sockets[strangerQueue].emit('conn');
 		strangerQueue = false;
-        */
 		
 	} else {
-        strangerQueue = []
-        strangerQueue[0] = users[socket.id];
-    }
+		strangerQueue = socket.id;
+	}
 
 	peopleActive++;
 	peopleTotal++;
@@ -192,13 +144,3 @@ io.sockets.on('connection', function (socket) {
 		
 	});
 });
-
-function connectTo(myID, currStrange) {
-    users[myID].connectedTo = currStrange.id;
-    users[myID].isTyping = false;
-    users[currentStrange.id].connectedTo = socket.id;
-    users[currentStrange.id].isTyping = false;
-    socket.emit('conn');
-    sockets[currStrange.id].emit('conn');
-}
-
