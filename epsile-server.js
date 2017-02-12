@@ -4,7 +4,7 @@
 'use strict';
 
 // config
-var port = 8001;
+var port = process.env.PORT || 8001;
 
 // load and initialize modules
 var express = require('express');
@@ -132,8 +132,7 @@ io.sockets.on('connection', function (socket) {
 		if (strangerQueue === socket.id || strangerQueue === connTo) {
 			strangerQueue = false;
 		}
-		users[socket.id].
-        = -1;
+		users[socket.id].connectedTo = -1;
 		users[socket.id].isTyping = false;
 		if (sockets[connTo]) {
 			users[connTo].connectedTo = -1;
