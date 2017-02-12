@@ -1,19 +1,19 @@
 
 
 .validation_icons {
-    display: inline-block;
+    display: block;
     list-style-type: none;
-
 }
 
 .icon {
-	float: left;
-	display: block;
+    float: left;
+    display: block;
     margin: center;
     padding:60px;
     width: 50%;
     height: 50%;
 }
+    
 
 .iconPad {
 	display: block;
@@ -23,6 +23,7 @@
 }
 
 .dumb_icons {
-    align-items: center;
+    float: center;
     width: 100%;
+    background-color: white;
 }
