@@ -1,4 +1,4 @@
-sessionStorage["isLearn"] = false;
+sessionStorage["isDebate"] = true;
 
 function saveTopic() {
 	if(document.getElementbyID("fem").value === true) {
@@ -7,7 +7,7 @@ function saveTopic() {
 		sessionStorage["topic"] = "blm";
 	} else if(document.getElementbyID("imm").value === true) {
 		sessionStorage["topic"] = "imm";
-	} else if(document.getElementbyID("wom").value === true) {
+	} else if(document.getElemetbyID("wom").value === true) {
 		sessionStorage["topic"] = "wom";
 	} else {
 		sessionStorage["topic"] = "lgbt";
@@ -21,13 +21,20 @@ function setisLeftTrue() {
 function setisLeftfalse() {
 	sessionStorage["isLeft"] = false;]
 }
-
+n
 function saveandTrue() {
 	saveTopic();
 	setisLeftTrue();
+	sessionStorage["isLearn"] = undefined;
 }
 
 function saveandFalse() {
 	saveTopic();
 	setisLeftFalse();
+	sessionStorage["isLearn"] = undefined;
+}
+
+function saveTopicNull() {
+	saveTopic();
+	sessionStorage["isLeft"] = undefined;
 }

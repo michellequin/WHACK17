@@ -46,9 +46,17 @@ io.sockets.on('connection', function (socket) {
 	users[socket.id] = {
         id: socket.id,
 		connectedTo: -1,
-		isTyping: false
-
+		isTyping: false,
+		isDebate: sessionStorage["isDebate"]
+		topic : sessionStorage["topic"];
 	};
+
+	if(users[socket.id].isDebate) {
+		users[socket.id].isLeft = sessionStorage["isLeft"];
+	} else {
+		users[socket.id].isLearn = sessionStorage["isLearn"];
+	}
+
 
 	// connect the user to another if strangerQueue isn't empty
 	if (strangerQueue !== false) {
