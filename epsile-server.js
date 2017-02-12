@@ -48,7 +48,7 @@ io.sockets.on('connection', function (socket) {
 		connectedTo: -1,
 		isTyping: false,
 		isDebate: sessionStorage["isDebate"],
-		topic : sessionStorage["topic"];
+		topic : sessionStorage["topic"]
 	};
 
 	if(users[socket.id].isDebate) {
