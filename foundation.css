@@ -4341,9 +4341,8 @@ a.thumbnail {
   animation-delay: 700ms !important; }
 .iconPad{
   padding:10px;
-  font:"Times New Roman";
-  color: #6F00B2;
-  background-color: #FFF5D9;
+  color: #b30000;
+  background-color: #fff599;
 }
 .btwPad{
   padding:20px;
