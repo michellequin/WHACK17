@@ -4340,7 +4340,10 @@ a.thumbnail {
 .long-delay {
   animation-delay: 700ms !important; }
 .iconPad{
-  padding:70px;
+  padding:10px;
+  font:"Times New Roman";
+  color: #6F00B2;
+  background-color: #FFF5D9;
 }
 .btwPad{
   padding:20px;
